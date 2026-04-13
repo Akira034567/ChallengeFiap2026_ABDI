@@ -11,8 +11,8 @@ Progresso do nosso projeto (lista lateral com os nossos entregáveis)
 Pilares
 Tecnologias
 Valores
-Benefícios
-Diferença de concorrências 
+Benefícios -- pq a gente se destaca -- o que nós entregamos a mais do que foi pedido
+Diferença de concorrências -- mercado? 
 Casos de uso
 Contato
 Dashboards
