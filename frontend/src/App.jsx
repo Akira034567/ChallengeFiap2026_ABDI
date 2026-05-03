@@ -1,3 +1,4 @@
+import { useEffect, useState } from 'react'
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import About from './components/About'
@@ -13,21 +14,34 @@ import Contact from './components/Contact'
 import Footer from './components/Footer'
 
 function App() {
+  const [activeTab, setActiveTab] = useState('overview')
+
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: 'smooth' })
+  }, [activeTab])
+
   return (
     <>
-      <Navbar />
+      <Navbar activeTab={activeTab} onTabChange={setActiveTab} />
       <main>
-        <Hero />
-        <About />
-        <Progress />
-        <Pillars />
-        <Technologies />
-        <Values />
-        <Benefits />
-        <Competition />
-        <UseCases />
-        <Dashboards />
-        <Contact />
+        {activeTab === 'overview' ? (
+          <>
+            <Hero />
+            <About />
+            <Progress />
+            <Technologies />
+            <UseCases />
+            <Dashboards />
+            <Contact />
+          </>
+        ) : (
+          <section id="conheca-mais">
+            <Pillars />
+            <Values />
+            <Benefits />
+            <Competition />
+          </section>
+        )}
       </main>
       <Footer />
     </>

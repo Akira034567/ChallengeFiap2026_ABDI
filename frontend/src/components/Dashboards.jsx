@@ -31,10 +31,10 @@ const epiData = [
 const PIE_COLORS = ['#2196f3', '#f44336', '#ffc107', '#ff6d00']
 
 const kpis = [
-  { label: 'Alertas Gerados',   value: '1.247', sub: 'últimos 30 dias',  color: '#2196f3' },
-  { label: 'Conformidade Média', value: '78%',  sub: '+12% vs. sem IA',  color: '#4caf50' },
-  { label: 'Máquinas Travadas',  value: '34',   sub: 'acionamentos mês', color: '#f44336' },
-  { label: 'Câmeras Ativas',     value: '8',    sub: 'online agora',     color: '#7c4dff' },
+  { label: 'Alertas Gerados',   value: '-', sub: 'últimos 30 dias',  color: '#2196f3' },
+  { label: 'Conformidade Média', value: '-',  sub: '+% vs. sem IA',  color: '#4caf50' },
+  { label: 'Máquinas Travadas',  value: '-',   sub: 'acionamentos mês', color: '#f44336' },
+  { label: 'Câmeras Ativas',     value: '1',    sub: 'online agora',     color: '#7c4dff' },
 ]
 
 const tooltipStyle = {
