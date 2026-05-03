@@ -83,7 +83,7 @@ export default function Dashboards() {
               Incidentes por Mês
             </h3>
             <p style={{ color: 'var(--text-muted)', fontSize: '0.82rem', marginBottom: 20 }}>
-              Antes vs. depois da implantação do VigiSafe
+              Antes vs. depois da implantação com o Code&Ops
             </p>
             <ResponsiveContainer width="100%" height={220}>
               <BarChart data={incidentData} barSize={14} barGap={4}>
@@ -92,8 +92,8 @@ export default function Dashboards() {
                 <YAxis tick={{ fill: '#4a6c8a', fontSize: 12 }} axisLine={false} tickLine={false} />
                 <Tooltip contentStyle={tooltipStyle} cursor={{ fill: 'rgba(33,150,243,0.07)' }} />
                 <Legend wrapperStyle={{ fontSize: '0.82rem', color: 'var(--text-2)' }} />
-                <Bar dataKey="semEPI" name="Sem VigiSafe" fill="#f44336" radius={[4, 4, 0, 0]} />
-                <Bar dataKey="comEPI" name="Com VigiSafe" fill="#2196f3" radius={[4, 4, 0, 0]} />
+                <Bar dataKey="semEPI" name="Sem Code&Ops" fill="#f44336" radius={[4, 4, 0, 0]} />
+                <Bar dataKey="comEPI" name="Com Code&Ops" fill="#2196f3" radius={[4, 4, 0, 0]} />
               </BarChart>
             </ResponsiveContainer>
           </div>
@@ -152,3 +152,6 @@ export default function Dashboards() {
     </section>
   )
 }
+
+
+

@@ -60,10 +60,10 @@ export default function Footer() {
                 <Shield size={20} color="#fff" />
               </div>
               <span style={{ fontWeight: 800, fontSize: '1.2rem', letterSpacing: '-0.5px' }}>
-                Vigi<span style={{
+                Code<span style={{
                   background: 'linear-gradient(135deg,#42a5f5,#00c8e8)',
                   WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent',
-                }}>Safe</span>
+                }}>&Ops</span>
               </span>
             </div>
             <p style={{ color: 'var(--text-2)', fontSize: '0.9rem', lineHeight: 1.7, maxWidth: 280 }}>
@@ -124,7 +124,7 @@ export default function Footer() {
         {/* Bottom row */}
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: 16 }}>
           <p style={{ color: 'var(--text-muted)', fontSize: '0.83rem' }}>
-            © 2026 VigiSafe — FIAP Challenge × ABDI. Todos os direitos reservados.
+            © 2026 Code&Ops — FIAP Challenge × ABDI. Todos os direitos reservados.
           </p>
           <button onClick={scrollTop}
             style={{
@@ -161,3 +161,6 @@ export default function Footer() {
     </footer>
   )
 }
+
+
+

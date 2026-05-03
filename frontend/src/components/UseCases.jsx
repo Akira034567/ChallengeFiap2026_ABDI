@@ -61,7 +61,7 @@ export default function UseCases() {
           <span className="section-tag">Aplicações</span>
           <h2 className="section-title">Casos de <span className="gradient-text">Uso</span></h2>
           <p className="section-subtitle">
-            Como o VigiSafe se adapta a diferentes setores industriais e resolve problemas reais de segurança.
+            Como o sistema do Code&Ops se adapta a diferentes setores industriais e resolve problemas reais de segurança.
           </p>
         </div>
 
@@ -149,3 +149,6 @@ export default function UseCases() {
     </section>
   )
 }
+
+
+

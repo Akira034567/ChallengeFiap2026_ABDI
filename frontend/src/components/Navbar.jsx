@@ -60,7 +60,7 @@ export default function Navbar() {
               <Shield size={20} color="#fff" />
             </div>
             <span style={{ fontWeight: 800, fontSize: '1.2rem', letterSpacing: '-0.5px' }}>
-              Vigi<span className="gradient-text">Safe</span>
+              Code<span className="gradient-text">&Ops</span>
             </span>
           </a>
 

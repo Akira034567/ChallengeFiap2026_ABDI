@@ -56,7 +56,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <div style={{ fontWeight: 700, marginBottom: 2 }}>E-mail</div>
-                  <div style={{ fontSize: '0.88rem', color: 'var(--text-2)' }}>contato@vigisafe.com.br</div>
+                  <div style={{ fontSize: '0.88rem', color: 'var(--text-2)' }}>Code&Ops@gmail.com.br</div>
                 </div>
               </div>
               <p style={{ color: 'var(--text-2)', fontSize: '0.9rem', lineHeight: 1.65 }}>

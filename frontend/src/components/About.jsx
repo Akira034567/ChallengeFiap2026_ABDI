@@ -3,7 +3,7 @@ import { GitFork, Briefcase, Target, Handshake, Users } from 'lucide-react'
 import { useInView } from '../hooks/useInView'
 import { teamMembers } from '../data/teamData'
 
-function TeamCard({ member, index }) {
+function TeamCard({ member, index, visible }) {
   const [flipped, setFlipped] = useState(false)
 
   return (
@@ -14,7 +14,7 @@ function TeamCard({ member, index }) {
         height: 280,
         cursor: 'pointer',
       }}
-      className={`reveal reveal-delay-${Math.min(index + 1, 4)}`}
+      className={`reveal reveal-delay-${Math.min(index + 1, 4)} ${visible ? 'visible' : ''}`}
     >
       <div style={{
         width: '100%', height: '100%',
@@ -210,7 +210,7 @@ export default function About() {
 
         <div className="grid-3" style={{ gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))' }}>
           {teamMembers.map((m, i) => (
-            <TeamCard key={m.id} member={m} index={i} />
+            <TeamCard key={m.id} member={m} index={i} visible={visible} />
           ))}
         </div>
       </div>

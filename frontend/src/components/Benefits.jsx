@@ -66,7 +66,7 @@ export default function Benefits() {
       <div className="container">
         <div className="section-header">
           <span className="section-tag"><Award size={12} /> Diferenciais</span>
-          <h2 className="section-title">Por que o <span className="gradient-text">VigiSafe</span> se Destaca</h2>
+          <h2 className="section-title">Por que o <span className="gradient-text">Code&Ops</span> se Destaca</h2>
           <p className="section-subtitle">
             O que entregamos além do solicitado e por que somos a melhor escolha para segurança industrial com IA.
           </p>
@@ -134,3 +134,6 @@ export default function Benefits() {
     </section>
   )
 }
+
+
+

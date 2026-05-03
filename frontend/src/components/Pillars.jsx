@@ -57,7 +57,7 @@ export default function Pillars() {
       <div className="container">
         <div className="section-header">
           <span className="section-tag">Nossos Pilares</span>
-          <h2 className="section-title">Os Pilares do <span className="gradient-text">VigiSafe</span></h2>
+          <h2 className="section-title">Os Pilares do <span className="gradient-text">Code&Ops</span></h2>
           <p className="section-subtitle">
             Seis dimensões fundamentais que sustentam nossa solução e garantem eficácia real no ambiente industrial.
           </p>
@@ -106,3 +106,6 @@ export default function Pillars() {
     </section>
   )
 }
+
+
+

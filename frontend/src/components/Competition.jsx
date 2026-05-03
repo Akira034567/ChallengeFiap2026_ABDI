@@ -16,7 +16,7 @@ const features = [
 
 const columns = [
   {
-    label: 'VigiSafe',
+    label: 'Code&Ops',
     highlight: true,
     values: [true, true, true, true, true, true, true, true, true, true],
   },
@@ -71,7 +71,7 @@ export default function Competition() {
           <span className="section-tag"><Globe size={12} /> Mercado</span>
           <h2 className="section-title">Nossa <span className="gradient-text">Vantagem</span> Competitiva</h2>
           <p className="section-subtitle">
-            Comparativo honesto: onde o VigiSafe supera as abordagens tradicionais e soluções existentes.
+            Comparativo honesto: onde o Code&Ops supera as abordagens tradicionais e soluções existentes.
           </p>
         </div>
 
@@ -147,3 +147,6 @@ export default function Competition() {
     </section>
   )
 }
+
+
+
