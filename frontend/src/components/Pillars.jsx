@@ -19,7 +19,7 @@ const pillars = [
   {
     icon: <Cpu size={28} />,
     title: 'IA de Ponta',
-    description: 'Arquitetura YOLOv8 otimizada com aceleração de hardware (CUDA/TensorRT) para inferência em tempo real com máxima eficiência energética.',
+    description: 'Arquitetura YOLOv8 otimizada com aceleração de hardware (TensorRT) para inferência em tempo real com máxima eficiência energética.',
     color: '#7c4dff',
     gradient: 'linear-gradient(135deg,#512da8,#7c4dff)',
   },
