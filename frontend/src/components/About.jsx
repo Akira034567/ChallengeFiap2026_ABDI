@@ -208,7 +208,7 @@ export default function About() {
           </p>
         </div>
 
-        <div className="grid-3" style={{ gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))' }}>
+        <div className="grid-3" style={{ gridTemplateColumns: 'repeat(3, minmax(220px, 1fr))' }}>
           {teamMembers.map((m, i) => (
             <TeamCard key={m.id} member={m} index={i} visible={visible} />
           ))}
