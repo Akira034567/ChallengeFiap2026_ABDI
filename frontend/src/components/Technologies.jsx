@@ -34,7 +34,7 @@ const categories = [
     color: '#00c8e8',
     techs: [
       { name: 'React', desc: 'Interface web responsiva' },
-      //  name: 'Vite', desc: 'Bundler e dev server' },
+      { name: 'Vite', desc: 'Bundler e dev server' },
       { name: 'Recharts', desc: 'Visualização de dados' },
       { name: 'React Native', desc: 'App mobile multiplataforma' },
       { name: 'Firebase', desc: 'Notificações push (FCM)' },
