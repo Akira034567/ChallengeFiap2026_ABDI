@@ -15,10 +15,39 @@ import Footer from './components/Footer'
 
 function App() {
   const [activeTab, setActiveTab] = useState('overview')
+  const [pendingSection, setPendingSection] = useState(null)
+
+  const sectionTabMap = {
+    '#sobre': 'overview',
+    '#progresso': 'overview',
+    '#tecnologias': 'overview',
+    '#casos': 'overview',
+    '#dashboard': 'overview',
+    '#contato': 'overview',
+    '#pilares': 'deep-dive',
+    '#valores': 'deep-dive',
+    '#beneficios': 'deep-dive',
+    '#mercado': 'deep-dive',
+  }
 
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: 'smooth' })
   }, [activeTab])
+
+  useEffect(() => {
+    if (!pendingSection) return
+    const el = document.querySelector(pendingSection)
+    if (el) {
+      el.scrollIntoView({ behavior: 'smooth' })
+      setPendingSection(null)
+    }
+  }, [activeTab, pendingSection])
+
+  const navigateToSection = (href) => {
+    const targetTab = sectionTabMap[href] || 'overview'
+    setPendingSection(href)
+    setActiveTab(targetTab)
+  }
 
   return (
     <>
@@ -43,7 +72,7 @@ function App() {
           </section>
         )}
       </main>
-      <Footer />
+      <Footer onNavigateSection={navigateToSection} />
     </>
   )
 }

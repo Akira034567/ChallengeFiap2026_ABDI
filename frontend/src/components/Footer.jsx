@@ -29,12 +29,11 @@ const navGroups = [
   },
 ]
 
-export default function Footer() {
+export default function Footer({ onNavigateSection = () => {} }) {
   const scrollTop = () => window.scrollTo({ top: 0, behavior: 'smooth' })
   const scrollTo  = (e, href) => {
     e.preventDefault()
-    const el = document.querySelector(href)
-    if (el) el.scrollIntoView({ behavior: 'smooth' })
+    onNavigateSection(href)
   }
 
   return (
@@ -161,6 +160,7 @@ export default function Footer() {
     </footer>
   )
 }
+
 
 
 

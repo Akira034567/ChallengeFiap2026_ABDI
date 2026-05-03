@@ -3,6 +3,7 @@ import { Mail, MessageSquare, Send, GitFork, Briefcase, CheckCircle2 } from 'luc
 import { useInView } from '../hooks/useInView'
 
 export default function Contact() {
+  const CONTACT_EMAIL = 'CodenOps@gmail.com'
   const [ref, visible] = useInView()
   const [form, setForm] = useState({ name: '', email: '', subject: '', message: '' })
   const [sent, setSent] = useState(false)
@@ -11,6 +12,11 @@ export default function Contact() {
 
   const submit = e => {
     e.preventDefault()
+    const subject = encodeURIComponent(`[Site] ${form.subject}`)
+    const body = encodeURIComponent(
+      `Nome: ${form.name}\nEmail: ${form.email}\n\nMensagem:\n${form.message}`
+    )
+    window.location.href = `mailto:${CONTACT_EMAIL}?subject=${subject}&body=${body}`
     setSent(true)
     setTimeout(() => setSent(false), 4000)
     setForm({ name: '', email: '', subject: '', message: '' })
@@ -56,7 +62,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <div style={{ fontWeight: 700, marginBottom: 2 }}>E-mail</div>
-                  <div style={{ fontSize: '0.88rem', color: 'var(--text-2)' }}>Code&Ops@gmail.com.br</div>
+                  <div style={{ fontSize: '0.88rem', color: 'var(--text-2)' }}>{CONTACT_EMAIL}</div>
                 </div>
               </div>
               <p style={{ color: 'var(--text-2)', fontSize: '0.9rem', lineHeight: 1.65 }}>
