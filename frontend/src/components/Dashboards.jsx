@@ -6,26 +6,26 @@ import { BarChart2, TrendingUp } from 'lucide-react'
 import { useInView } from '../hooks/useInView'
 
 const incidentData = [
-  { mes: 'Jan', semEPI: 24, comEPI: 3 },
-  { mes: 'Fev', semEPI: 18, comEPI: 2 },
-  { mes: 'Mar', semEPI: 29, comEPI: 4 },
-  { mes: 'Abr', semEPI: 12, comEPI: 1 },
-  { mes: 'Mai', semEPI: 8,  comEPI: 1 },
-  { mes: 'Jun', semEPI: 5,  comEPI: 0 },
+  { mes: 'Jan', semEPI: 0, comEPI: 0 },
+  { mes: 'Fev', semEPI: 0, comEPI: 0 },
+  { mes: 'Mar', semEPI: 0, comEPI: 0 },
+  { mes: 'Abr', semEPI: 0, comEPI: 0 },
+  { mes: 'Mai', semEPI: 0, comEPI: 0 },
+  { mes: 'Jun', semEPI: 0, comEPI: 0 },
 ]
 
 const accuracyData = [
-  { sprint: 'S1', capacete: 0,  colete: 0,  oculos: 0  },
-  { sprint: 'S2', capacete: 94, colete: 92, oculos: 89 },
-  { sprint: 'S3', capacete: 95, colete: 93, oculos: 91 },
-  { sprint: 'S4', capacete: 96, colete: 94, oculos: 92 },
+  { sprint: 'S1', capacete: 0,  oculos: 0  },
+  { sprint: 'S2', capacete: 88, oculos: 82 },
+  { sprint: 'S3', capacete: 95, oculos: 91 },
+  { sprint: 'S4', capacete: 96, oculos: 92 },
 ]
 
 const epiData = [
-  { name: 'Em conformidade', value: 78 },
-  { name: 'Sem capacete',    value: 10 },
-  { name: 'Sem colete',      value: 7  },
-  { name: 'Sem óculos',      value: 5  },
+  { name: 'Em conformidade', value: 0 },
+  { name: 'Sem capacete',    value: 0 },
+  { name: 'Sem colete',      value: 0 },
+  { name: 'Sem óculos',      value: 0  },
 ]
 
 const PIE_COLORS = ['#2196f3', '#f44336', '#ffc107', '#ff6d00']
@@ -143,7 +143,6 @@ export default function Dashboards() {
               <Tooltip contentStyle={tooltipStyle} formatter={(v) => [`${v}%`]} />
               <Legend wrapperStyle={{ fontSize: '0.82rem', color: 'var(--text-2)' }} />
               <Line type="monotone" dataKey="capacete" name="Capacete" stroke="#2196f3" strokeWidth={2.5} dot={{ r: 4, fill: '#2196f3' }} />
-              <Line type="monotone" dataKey="colete"   name="Colete"   stroke="#00c8e8" strokeWidth={2.5} dot={{ r: 4, fill: '#00c8e8' }} />
               <Line type="monotone" dataKey="oculos"   name="Óculos"   stroke="#7c4dff" strokeWidth={2.5} dot={{ r: 4, fill: '#7c4dff' }} />
             </LineChart>
           </ResponsiveContainer>
@@ -152,6 +151,8 @@ export default function Dashboards() {
     </section>
   )
 }
+
+
 
 
 
