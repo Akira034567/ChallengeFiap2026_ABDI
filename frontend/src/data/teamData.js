@@ -9,7 +9,7 @@ export const teamMembers = [
     linkedin: "https://www.linkedin.com/in/lucas-akira-watanabe-b49ba3255/",
     initials: "LA",
     color: "#2196f3",
-    photo: "/LucasAkira.jpg",
+    photo: `${import.meta.env.BASE_URL}LucasAkira.jpg`,
   },
   {
     id: 2,
@@ -21,7 +21,7 @@ export const teamMembers = [
     linkedin: "https://www.linkedin.com/in/luizguilhermedesouzavarischi/",
     initials: "LG",
     color: "#00b4d8",
-    photo: "/LuizGuilherme.jpg",
+    photo: `${import.meta.env.BASE_URL}LuizGuilherme.jpg`,
   },
   {
     id: 3,
@@ -33,7 +33,7 @@ export const teamMembers = [
     linkedin: "https://www.linkedin.com/in/davibiaggioli/",
     initials: "DB",
     color: "#7c4dff",
-    photo: "/DaviBiaggioli.png",
+    photo: `${import.meta.env.BASE_URL}DaviBiaggioli.png`,
   },
   {
     id: 4,
@@ -45,7 +45,7 @@ export const teamMembers = [
     linkedin: "https://www.linkedin.com/in/jeandepieri/",
     initials: "JL",
     color: "#00c853",
-    photo: "/JeanLucas.jpg",
+    photo: `${import.meta.env.BASE_URL}JeanLucas.jpg`,
   },
   {
     id: 5,
@@ -57,7 +57,7 @@ export const teamMembers = [
     linkedin: "https://www.linkedin.com/in/jo%C3%A3o-gabriel-de-bortoli-ribeiro/",
     initials: "JG",
     color: "#ff6d00",
-    photo: "/JoaoGabriel.png",
+    photo: `${import.meta.env.BASE_URL}JoaoGabriel.png`,
   },
   {
     id: 6,
@@ -69,6 +69,6 @@ export const teamMembers = [
     linkedin: "https://www.linkedin.com/in/franciscoferrara/",
     initials: "FF",
     color: "#e91e63",
-    photo: "/FranciscoFerrara.jpg",
+    photo: `${import.meta.env.BASE_URL}FranciscoFerrara.jpg`,
   },
 ];
