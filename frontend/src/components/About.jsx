@@ -208,12 +208,24 @@ export default function About() {
           </p>
         </div>
 
-        <div className="grid-3" style={{ gridTemplateColumns: 'repeat(3, minmax(220px, 1fr))' }}>
+        <div className="grid-3 team-grid">
           {teamMembers.map((m, i) => (
             <TeamCard key={m.id} member={m} index={i} visible={visible} />
           ))}
         </div>
       </div>
+
+      <style>{`
+        .team-grid { grid-template-columns: repeat(3, 1fr); }
+        @media(max-width:1024px){ .team-grid { grid-template-columns: repeat(2, 1fr) !important; } }
+        @media(max-width:640px){
+          .team-grid { grid-template-columns: 1fr !important; }
+          .team-grid > div { height: 260px; }
+        }
+        @media(max-width:480px){
+          .team-grid > div { height: 240px; }
+        }
+      `}</style>
     </section>
   )
 }
