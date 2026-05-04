@@ -16,9 +16,9 @@ const incidentData = [
 
 const accuracyData = [
   { sprint: 'S1', capacete: 0,  oculos: 0,  luvas: 0  },
-  { sprint: 'S2', capacete: 88, oculos: 82, luvas: 76 },
-  { sprint: 'S3', capacete: 95, oculos: 91, luvas: 84 },
-  { sprint: 'S4', capacete: 96, oculos: 92, luvas: 84 },
+  { sprint: 'S2', capacete: 88, oculos: 82, luvas: 84 },
+  { sprint: 'S3', capacete: 95, oculos: 91, luvas: 92 },
+  { sprint: 'S4', capacete: 96, oculos: 92, luvas: 94 },
 ]
 
 const epiData = [
