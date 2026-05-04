@@ -27,9 +27,10 @@ export const sprints = [
       "Dataset com +4.300 imagens anotadas de ambientes industriais",
       "Deteccao de capacete de seguranca (mAP 98%)",
       "Deteccao de oculos e protetor facial (mAP 82%)",
+      "Deteccao de luvas de seguranca (mAP 84%)",
     ],
     future:
-      "Expansao para luvas, botinas, protetores auriculares e EPIs especificos por setor industrial. Alem de aprimoramento continuo do modelo com mais dados e tecnicas avancadas de IA.",
+      "Expansao para botinas, protetores auriculares e EPIs especificos por setor industrial. Alem de aprimoramento continuo do modelo com mais dados e tecnicas avancadas de IA.",
   },
   {
     id: 3,
