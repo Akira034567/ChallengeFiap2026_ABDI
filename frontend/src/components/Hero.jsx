@@ -60,7 +60,7 @@ export default function Hero() {
             borderRadius: 'var(--radius-pill)',
             padding: '8px 20px', marginBottom: 32,
           }}>
-            <img src="/logo.jpg" alt="FIAP" style={{ width: 24, height: 24, borderRadius: 4, objectFit: 'cover' }} />
+            <img src={`${import.meta.env.BASE_URL}logo.jpg`} alt="FIAP" style={{ width: 24, height: 24, borderRadius: 4, objectFit: 'cover' }} />
             <span style={{ fontSize: '0.82rem', fontWeight: 600, color: 'var(--text-2)', letterSpacing: '1px' }}>
               FIAP × ABDI — Challenge 2026
             </span>

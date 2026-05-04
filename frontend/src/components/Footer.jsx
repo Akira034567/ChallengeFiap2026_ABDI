@@ -43,7 +43,7 @@ export default function Footer({ onNavigateSection = () => {} }) {
     }}>
       <div className="container" style={{ paddingTop: 64, paddingBottom: 40 }}>
         {/* Top row */}
-        <div style={{
+        <div className="footer-grid" style={{
           display: 'grid', gridTemplateColumns: '1fr repeat(3,auto)',
           gap: 48, alignItems: 'start', marginBottom: 48,
         }}>
@@ -143,17 +143,18 @@ export default function Footer({ onNavigateSection = () => {} }) {
 
       <style>{`
         @media(max-width:768px){
-          footer div[style*="1fr repeat(3,auto)"]{
+          .footer-grid{
             grid-template-columns:1fr 1fr!important;
             gap:32px!important;
           }
-          footer div[style*="1fr repeat(3,auto)"] > div:first-child{
+          .footer-grid > div:first-child{
             grid-column:1/-1;
           }
         }
         @media(max-width:480px){
-          footer div[style*="1fr repeat(3,auto)"]{
+          .footer-grid{
             grid-template-columns:1fr!important;
+            gap:24px!important;
           }
         }
       `}</style>
