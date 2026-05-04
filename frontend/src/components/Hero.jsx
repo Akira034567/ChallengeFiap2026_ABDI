@@ -1,7 +1,7 @@
 import { ArrowRight, ShieldCheck, Eye, Zap } from 'lucide-react'
 
 const stats = [
-  { value: '84%', label: 'Precisão de detecção' },
+  { value: '79%', label: 'Precisão de detecção' },
   { value: '<50ms', label: 'Latência em tempo real' },
   { value: '1+', label: 'Câmeras simultâneas' },
   { value: 'NR-12', label: 'Conformidade garantida' },
