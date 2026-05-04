@@ -161,6 +161,37 @@ export default function Progress() {
             )}
           </div>
         </div>
+
+        {/* Demo video */}
+        <div className={`reveal ${visible ? 'visible' : ''}`} style={{ marginTop: 48 }}>
+          <h3 style={{
+            fontSize: '0.78rem', fontWeight: 700, color: 'var(--text-muted)',
+            letterSpacing: '2px', textTransform: 'uppercase', marginBottom: 16,
+            textAlign: 'center',
+          }}>
+            Demonstração em Vídeo
+          </h3>
+          <div style={{
+            background: 'var(--bg-card)', border: '1px solid var(--border)',
+            borderRadius: 'var(--radius-lg)', overflow: 'hidden',
+            backdropFilter: 'blur(14px)',
+            boxShadow: 'var(--shadow-card)',
+          }}>
+            <div style={{ position: 'relative', paddingTop: '56.25%' }}>
+              <iframe
+                src="https://www.youtube.com/embed/0Bkv3wZOuyo"
+                title="Demonstração Code&Ops"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+                style={{
+                  position: 'absolute', top: 0, left: 0,
+                  width: '100%', height: '100%',
+                  border: 'none',
+                }}
+              />
+            </div>
+          </div>
+        </div>
       </div>
 
       <style>{`
