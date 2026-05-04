@@ -15,20 +15,21 @@ const incidentData = [
 ]
 
 const accuracyData = [
-  { sprint: 'S1', capacete: 0,  oculos: 0  },
-  { sprint: 'S2', capacete: 88, oculos: 82 },
-  { sprint: 'S3', capacete: 95, oculos: 91 },
-  { sprint: 'S4', capacete: 96, oculos: 92 },
+  { sprint: 'S1', capacete: 0,  oculos: 0,  luvas: 0  },
+  { sprint: 'S2', capacete: 88, oculos: 82, luvas: 76 },
+  { sprint: 'S3', capacete: 95, oculos: 91, luvas: 84 },
+  { sprint: 'S4', capacete: 96, oculos: 92, luvas: 84 },
 ]
 
 const epiData = [
   { name: 'Em conformidade', value: 0 },
   { name: 'Sem capacete',    value: 0 },
   { name: 'Sem colete',      value: 0 },
-  { name: 'Sem óculos',      value: 0  },
+  { name: 'Sem óculos',      value: 0 },
+  { name: 'Sem luvas',       value: 0 },
 ]
 
-const PIE_COLORS = ['#2196f3', '#f44336', '#ffc107', '#ff6d00']
+const PIE_COLORS = ['#2196f3', '#f44336', '#ffc107', '#ff6d00', '#4caf50']
 
 const kpis = [
   { label: 'Alertas Gerados',   value: '-', sub: 'últimos 30 dias',  color: '#2196f3' },
@@ -144,6 +145,7 @@ export default function Dashboards() {
               <Legend wrapperStyle={{ fontSize: '0.82rem', color: 'var(--text-2)' }} />
               <Line type="monotone" dataKey="capacete" name="Capacete" stroke="#2196f3" strokeWidth={2.5} dot={{ r: 4, fill: '#2196f3' }} />
               <Line type="monotone" dataKey="oculos"   name="Óculos"   stroke="#7c4dff" strokeWidth={2.5} dot={{ r: 4, fill: '#7c4dff' }} />
+              <Line type="monotone" dataKey="luvas"    name="Luvas"    stroke="#4caf50" strokeWidth={2.5} dot={{ r: 4, fill: '#4caf50' }} />
             </LineChart>
           </ResponsiveContainer>
         </div>
