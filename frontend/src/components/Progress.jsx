@@ -47,7 +47,7 @@ export default function Progress() {
           </div>
         </div>
 
-        <div style={{ display: 'grid', gridTemplateColumns: '280px 1fr', gap: 28 }}>
+        <div className="progress-grid" style={{ display: 'grid', gridTemplateColumns: '280px 1fr', gap: 28 }}>
           {/* Sidebar */}
           <div className={`reveal ${visible ? 'visible' : ''}`} style={{
             background: 'var(--bg-card)',
@@ -93,7 +93,7 @@ export default function Progress() {
           </div>
 
           {/* Content */}
-          <div className={`reveal reveal-delay-1 ${visible ? 'visible' : ''}`}
+          <div className={`progress-content reveal reveal-delay-1 ${visible ? 'visible' : ''}`}
             style={{
               background: 'var(--bg-card)', border: '1px solid var(--border)',
               borderRadius: 'var(--radius-lg)', padding: 36,
@@ -101,7 +101,7 @@ export default function Progress() {
             }}>
             {sprint && (
               <>
-                <div style={{ display: 'flex', alignItems: 'center', gap: 14, marginBottom: 24 }}>
+                <div className="progress-header" style={{ display: 'flex', alignItems: 'center', gap: 14, marginBottom: 24 }}>
                   <div style={{
                     background: 'linear-gradient(135deg,#1565c0,#2196f3)',
                     borderRadius: 10, padding: '8px 16px',
@@ -165,7 +165,12 @@ export default function Progress() {
 
       <style>{`
         @media(max-width:768px){
-          div[style*="280px 1fr"]{grid-template-columns:1fr!important}
+          .progress-grid{grid-template-columns:1fr!important}
+          .progress-content{padding:24px!important}
+        }
+        @media(max-width:480px){
+          .progress-content{padding:20px 16px!important}
+          .progress-header{flex-direction:column!important;align-items:flex-start!important;gap:10px!important}
         }
       `}</style>
     </section>

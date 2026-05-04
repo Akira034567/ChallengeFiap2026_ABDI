@@ -95,7 +95,7 @@ export default function Hero() {
           </div>
 
           {/* CTAs */}
-          <div style={{ display: 'flex', gap: 16, justifyContent: 'center', flexWrap: 'wrap', marginBottom: 80 }}>
+          <div className="hero-cta" style={{ display: 'flex', gap: 16, justifyContent: 'center', flexWrap: 'wrap', marginBottom: 80 }}>
             <button className="btn btn-primary" onClick={() => scrollTo('#sobre')} style={{ fontSize: '1rem', padding: '15px 34px' }}>
               Conheça o Projeto <ArrowRight size={18} />
             </button>
@@ -105,7 +105,7 @@ export default function Hero() {
           </div>
 
           {/* Stats */}
-          <div style={{
+          <div className="hero-stats" style={{
             display: 'grid', gridTemplateColumns: 'repeat(4,1fr)', gap: 1,
             background: 'var(--border)',
             borderRadius: 'var(--radius-lg)',
@@ -130,7 +130,12 @@ export default function Hero() {
 
       <style>{`
         @media(max-width:640px){
-          div[style*="repeat(4,1fr)"]{grid-template-columns:repeat(2,1fr)!important}
+          .hero-stats{grid-template-columns:repeat(2,1fr)!important}
+          .hero-cta{gap:12px!important}
+        }
+        @media(max-width:400px){
+          .hero-stats{grid-template-columns:1fr!important}
+          .hero-cta .btn{width:100%;justify-content:center}
         }
       `}</style>
     </section>

@@ -160,7 +160,7 @@ export default function Contact() {
                     onFocus={focusStyle} onBlur={blurStyle} />
                 </div>
 
-                <button type="submit" className="btn btn-primary" style={{ alignSelf: 'flex-end', padding: '13px 28px' }}>
+                <button type="submit" className="btn btn-primary contact-submit" style={{ alignSelf: 'flex-end', padding: '13px 28px' }}>
                   <Send size={16} /> Enviar Mensagem
                 </button>
               </form>
@@ -168,6 +168,14 @@ export default function Contact() {
           </div>
         </div>
       </div>
+      <style>{`
+        @media(max-width:640px){
+          .contact-submit{align-self:stretch!important;width:100%}
+        }
+        @media(max-width:480px){
+          #contato .card{padding:24px 18px!important}
+        }
+      `}</style>
     </section>
   )
 }

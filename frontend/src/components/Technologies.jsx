@@ -121,8 +121,8 @@ export default function Technologies() {
                   }}
                     onMouseEnter={e => { e.currentTarget.style.background = `${cat.color}12`; e.currentTarget.style.borderColor = `${cat.color}25` }}
                     onMouseLeave={e => { e.currentTarget.style.background = 'rgba(255,255,255,0.03)'; e.currentTarget.style.borderColor = 'rgba(255,255,255,0.05)' }}>
-                    <span style={{ fontWeight: 600, fontSize: '0.88rem', color: '#fff' }}>{t.name}</span>
-                    <span style={{ fontSize: '0.78rem', color: 'var(--text-muted)' }}>{t.desc}</span>
+                    <span className="tech-row-name" style={{ fontWeight: 600, fontSize: '0.88rem', color: '#fff' }}>{t.name}</span>
+                    <span className="tech-row-desc" style={{ fontSize: '0.78rem', color: 'var(--text-muted)' }}>{t.desc}</span>
                   </div>
                 ))}
               </div>
@@ -130,6 +130,12 @@ export default function Technologies() {
           ))}
         </div>
       </div>
+      <style>{`
+        @media(max-width:400px){
+          .tech-row-desc{display:none}
+          .tech-row-name{font-size:0.85rem}
+        }
+      `}</style>
     </section>
   )
 }
